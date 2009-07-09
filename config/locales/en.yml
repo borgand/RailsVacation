@@ -1,0 +1,20 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  vacation_saved: "Vacation message saved"
+  vacation_removed: "Vacation message removed"
+  error_on_save: "Error occured during save"
+  active: "Active"
+  subject: "Subject"
+  message: "Message"
+  save: "Save"
+  vacation_help_1: "To use this program, you first have to add to the <b>.procmailrc</b> the following line:"
+  vacation_help_2: "This includes the vacation script to your procmailrc.<br> It is recommended to put this line last in the file, so that all filter run before it (e.g spamfilter)"
+  title: "Vacation message"
+  log_out: "Log out"
+  log_in: "Log in"
+  help: "Help"
+  login: "login"
+  password: "password"
+  remember_me: "Remember me"

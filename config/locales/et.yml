@@ -1,0 +1,23 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+et:
+  vacation_saved: "Puhkuseteade on salvestatud"
+  vacation_removed: "Puhkuseteade on eemaldatud"
+  error_on_save: "Viga salvestamisel"
+  active: "Aktiivne"
+  subject: "Teema"
+  message: "Teade"
+  save: "Salvesta"
+  vacation_help_1: "Et seada puhkuseteateid selle programmiga, peate kõigepealt oma meiliserveri
+kodukaustas <b>.procmailrc</b> faili lisama rea:"
+  vacation_help_2: "See lisab procmaili käskude hulka puhkuseroboti, mis aktiveerimisel teie
+kirjadele automaatselt puhkuseteate saadab.<br>
+  Soovitatav on see rida panna kõige lõppu, et muud filtrid käivituksid enne seda (näiteks spämmitõrje)."
+  title: "Puhkuseteade"
+  log_out: "Logi välja"
+  log_in: "Logi sisse"
+  help: "Abi"
+  login: "Kasutajanimi"
+  password: "Parool"
+  remember_me: "Mäleta mind"

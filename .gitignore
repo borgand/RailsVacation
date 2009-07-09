@@ -1,0 +1,3 @@
+config/config.local.yml
+config/id_rsa*
+config/id_dsa*

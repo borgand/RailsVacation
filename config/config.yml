@@ -1,0 +1,18 @@
+common:
+    datadir: /var/run/vacation
+    remote_host: host.example.com
+    remote_user: vacation
+    domain: example.com
+    vacation_bin: /usr/bin/vacation
+    ssh_opts:
+        :keys:
+         - <%= RAILS_ROOT %>/config/id_rsa
+    users_table: users
+    users_table_key: id
+    password_field:
+    salt_field:
+    old_crypt_password: false
+    full_name:
+    first_name:
+    last_name:
+

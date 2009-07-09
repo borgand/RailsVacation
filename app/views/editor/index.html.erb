@@ -1,0 +1,9 @@
+<% form_for :vacation, :url => { :action => "save" } do |f| %>
+    <%= f.error_messages %>
+    <table>
+    <tr><td><%=t "active" %> : <td><%= f.check_box :enabled %></tr>
+    <tr><td><%=t "subject" %>: <td><%= f.text_field :subject %></tr>
+    <tr><td><%=t "message" %>: <td><%= f.text_area :message %></tr>
+    <tr><td>&nbsp;<td><%= f.submit t("save") %></tr>
+    </table>
+ <% end %>

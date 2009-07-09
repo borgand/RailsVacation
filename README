@@ -1,0 +1,54 @@
+RailsVacation
+=============
+
+Vacation message editor on Rails for managing procmail-style vacation scripts.
+RESTful authentication on (My)SQL user database.
+
+Installing procmail and vacation script is left to user.
+
+Each .procmailrc has to INCLUDERC the vacation.rc file that RailsVacations
+is managing. If this is done, RailsVacation handles the rest:
+ - setting up the files/dirs
+ - changing vacation message
+ - toggling the vacation state
+
+Vacation script should accept '-a' option for aliasing these addresses (which
+are generated from user database):
+ - username
+ - username@example.com
+ - firstname.lastname@example.com
+
+Configuration
+=============
+
+First of all - set up config/database.yml for atleast production environment.
+
+RailsVacation uses AppConfig plugin.
+Copy the distribution config/config.yml to config/config.local.yml and change
+as appropriate:
+    datadir - where to put the vacation files (default: /var/run/vacation)
+    remote_host - address of mailserver
+    remote_user - user that can connect to that host and write to datadir
+    domain - what is the domain of all e-mail addresses
+    vacation_bin - where to find the vacation binary
+    ssh_opts:
+        :keys: - an array of ssh keys to use for connection (default: config/id_rsa)
+    users_table - the name of the users table (default: users)
+    users_table_key - the primary key for the table (default: id)
+    password_field - password field (default: crypted_password)
+    salt_field - password salt field (default: salt)
+    old_crypt_password - toggle sha1/crypt encryption
+    full_name - name of the user full name field. Leave blank if doesn't exist (default: name)
+    first_name - name of the first name field. (no default)
+    last_name - name of the last name field. (no default)
+
+
+Localization
+============
+
+RailsVacation is localized to English and Estonian.
+
+To switch language, edit the config/environment.rb and
+set 'config.i18n.default_locale' as appropriate.
+
+To add new languages, just translate config/locales/en.yml.
